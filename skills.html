@@ -10,8 +10,17 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="bg-glow-blobs">
+        <div class="glow-blob blob-cyan"></div>
+        <div class="glow-blob blob-purple"></div>
+        <div class="glow-blob blob-pink"></div>
+    </div>
+    <div class="bg-grid"></div>
     <nav class="site-nav">
-        <a class="brand" href="index.html">Shankha Deep</a>
+        <a class="brand" href="index.html">
+            <span class="brand-logo">SD</span>
+            <span class="brand-name">Shankha Deep</span>
+        </a>
         <div class="nav-links">
             <a href="about.html">About</a>
             <a href="skills.html">Skills</a>
@@ -19,9 +28,17 @@
             <a href="achievements.html">Achievements</a>
             <a href="contact.html">Contact</a>
         </div>
+        <a class="nav-cta" href="contact.html">
+            Let's Connect
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+        </a>
     </nav>
 
-    <main class="page-shell reveal">
+
+    <main class="page-shell">
         <p class="eyebrow">Skills</p>
         <h1>Current stack and creative strengths.</h1>
         <div class="skills-grid">
@@ -64,6 +81,8 @@
         </div>
     </main>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

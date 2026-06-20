@@ -10,8 +10,17 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="bg-glow-blobs">
+        <div class="glow-blob blob-cyan"></div>
+        <div class="glow-blob blob-purple"></div>
+        <div class="glow-blob blob-pink"></div>
+    </div>
+    <div class="bg-grid"></div>
     <nav class="site-nav">
-        <a class="brand" href="index.html">Shankha Deep</a>
+        <a class="brand" href="index.html">
+            <span class="brand-logo">SD</span>
+            <span class="brand-name">Shankha Deep</span>
+        </a>
         <div class="nav-links">
             <a href="about.html">About</a>
             <a href="skills.html">Skills</a>
@@ -19,16 +28,24 @@
             <a href="achievements.html">Achievements</a>
             <a href="contact.html">Contact</a>
         </div>
+        <a class="nav-cta" href="contact.html">
+            Let's Connect
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+        </a>
     </nav>
 
-    <main class="page-shell reveal">
+
+    <main class="page-shell">
         <p class="eyebrow">Projects</p>
         <h1>Small builds with big learning value.</h1>
         <div class="project-grid">
             <article class="project-card">
-                <span class="project-tag">OpenCV / Python</span>
-                <h2>Gesture Controlled Mouse</h2>
-                <p>Computer vision controls that translate hand movement into interaction.</p>
+                <span class="project-tag">Internship • React / Node / WebGL</span>
+                <h2>Kidrove Workshop Platform</h2>
+                <p>Responsive registration platform with a dark-themed UI, featuring an interactive 3D WebGL robot mascot, secure Express.js APIs, and Framer Motion animations.</p>
             </article>
             <article class="project-card">
                 <span class="project-tag">HTML / CSS / JS</span>
@@ -43,6 +60,8 @@
         </div>
     </main>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
