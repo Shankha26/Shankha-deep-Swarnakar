@@ -2359,6 +2359,7 @@ textarea:focus {
     display: flex;
     flex-direction: column;
     text-align: left;
+    min-width: 0;
 }
 
 .quick-link, .quick-val {
@@ -2367,6 +2368,11 @@ textarea:focus {
     color: var(--text);
     text-decoration: none;
     transition: color 0.2s ease;
+    overflow-wrap: break-word;
+}
+
+.quick-link {
+    word-break: break-all;
 }
 
 .quick-link:hover {
